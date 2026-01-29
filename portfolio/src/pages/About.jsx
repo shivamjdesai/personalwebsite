@@ -62,12 +62,12 @@ function About() {
             <section className="about-section">
                 <h2 className="section-title">Technical Skills</h2>
                 <div className="skill-tags">
-                    <span className="skill-tag">SQL</span>
-                    <span className="skill-tag">Tableau</span>
-                    <span className="skill-tag">Power BI</span>
-                    <span className="skill-tag">Python</span>
-                    <span className="skill-tag">React</span>
                     <span className="skill-tag">Domo</span>
+                    <span className="skill-tag">Power BI</span>
+                    <span className="skill-tag">Tableau</span>
+                    <span className="skill-tag">Snowflake</span>
+                    <span className="skill-tag">SQL</span>
+                    <span className="skill-tag">Python</span>
                 </div>
             </section>
         </div>
