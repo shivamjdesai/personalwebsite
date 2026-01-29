@@ -208,7 +208,7 @@
     }
 
     .signature-logo {
-        height: 60px;
+        height: 90px;
     }
 
     /* Hide desktop navigation on mobile */
@@ -224,5 +224,13 @@
     /* Show mobile menu overlay when open */
     .mobile-menu-overlay {
         display: block;
+    }
+
+    .mobile-theme-toggle {
+        width: 100%;
+        text-align: center;
+        border-radius: 50px;
+        margin-top: 2rem;
+        justify-content: center;
     }
 }
