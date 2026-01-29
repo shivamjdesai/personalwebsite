@@ -30,6 +30,7 @@
 [data-theme='dark'] .signature-logo {
     /* Invert colors for dark mode since the signature is likely black */
     filter: invert(1);
+    mix-blend-mode: screen;
 }
 
 .main-nav {
