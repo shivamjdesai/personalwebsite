@@ -133,16 +133,27 @@ useEffect(() => {
                 <span className="concept-badge">Event Handlers</span>
               </div>
               <pre className="code-block">
-                {`function Header({ theme, toggleTheme }) {
+                {`import { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import '../styles/Header.css'
+import signature from '/src/assets/Signature_v2.png'
+
+function Header({ theme, toggleTheme }) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen)
+  const closeMobileMenu = () => setIsMobileMenuOpen(false)
+
   return (
     <header className="site-header">
       <div className="header-content">
-        <Link to="/" className="logo-link">
-          <img src={signature} alt="Shivam Desai" 
+        <Link to="/" className="logo-link" onClick={closeMobileMenu}>
+          <img src={signature} alt="Shivam Desai Signature" 
                className="signature-logo" />
         </Link>
         
-        <nav className="main-nav">
+        {/* Desktop Navigation */}
+        <nav className="main-nav desktop-nav">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/experience">Experience</NavLink>
@@ -153,6 +164,35 @@ useEffect(() => {
             {theme === 'light' ? '🌙' : '☀️'}
           </button>
         </nav>
+        
+        {/* Hamburger Menu Button */}
+        <button className="hamburger-button" onClick={toggleMobileMenu}>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+        </button>
+        
+        {/* Mobile Menu Overlay */}
+        {isMobileMenuOpen && (
+          <div className="mobile-menu-overlay" onClick={closeMobileMenu}>
+            <nav className="mobile-nav" onClick={(e) => e.stopPropagation()}>
+              <button className="close-button" onClick={closeMobileMenu}>✕</button>
+              
+              <div className="mobile-nav-links">
+                <NavLink to="/" onClick={closeMobileMenu}>Home</NavLink>
+                <NavLink to="/about" onClick={closeMobileMenu}>About</NavLink>
+                <NavLink to="/experience" onClick={closeMobileMenu}>Experience</NavLink>
+                <NavLink to="/projects" onClick={closeMobileMenu}>Projects</NavLink>
+                <NavLink to="/bts" onClick={closeMobileMenu}>BTS</NavLink>
+                
+                <button onClick={() => { toggleTheme(); closeMobileMenu(); }} 
+                        className="theme-toggle mobile-theme-toggle">
+                  {theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode'}
+                </button>
+              </div>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   )
@@ -262,7 +302,17 @@ useEffect(() => {
     <p className="text-muted">{cert.issuer}</p>
     <p className="text-muted">{cert.date}</p>
   </a>
-))}`}
+))}
+
+// Technical Skills Section
+<div className="skill-tags">
+  <span className="skill-tag">Domo</span>
+  <span className="skill-tag">Power BI</span>
+  <span className="skill-tag">Tableau</span>
+  <span className="skill-tag">Snowflake</span>
+  <span className="skill-tag">SQL</span>
+  <span className="skill-tag">Python</span>
+</div>}`}
               </pre>
             </div>
 
@@ -391,6 +441,9 @@ useEffect(() => {
   --color-text-muted: #A0A0A0;
   --color-card-bg: #1E1E1E;
   --color-border: #333333;
+  
+  /* Feature: Seamless logo blending */
+  mix-blend-mode: screen; 
 }`}
               </pre>
             </div>
