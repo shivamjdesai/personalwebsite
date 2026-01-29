@@ -1,0 +1,109 @@
+﻿MILLER COOPER & CO., LTD.
+Analyst, Data & Analytics Advisory Services
+Chicago, Illinois
+September 2023 - Present
+
+
+* Collaborated with clients to identify key business challenges and design BI solutions through Domo that align with strategic goals and deliver measurable outcomes
+* Integrated and governed high-volume datasets from cloud, on-premise, and proprietary systems using federated queries and API connectors in Domo to ensure accurate, centralized reporting
+* Translated complex datasets, utilizing SQL and Domo Magic ETL Dataflows, into digestible visualizations using data storytelling techniques to highlight key trends and business implications
+* Designed scalable, customizable KPI dashboards -- leveraging Domo App Studio -- to provide executive stakeholders with access to real-time insights and engage in data-driven decision-making  
+* Enhanced organizational data literacy by simplifying complex analytics processes, empowering clients to capitalize on insights for sustained success independently
+
+
+________________
+
+
+
+
+MCKINSEY & COMPANY, INNOVATION & LEARNING CENTER
+Lead Operator on Assignment
+Atlanta, Georgia
+April 2023 - July 2023
+
+
+* Trained operators on lean methodologies & digital transformations in simulated manufacturing lines & mock scenarios
+* Led operator team huddles for 25+ client-facing workshops to communicate client content & business objective, establish timeline of modules / digital use cases, and coordinate roles effectively
+* Collaborated with Business Analysts to design, pilot, and iterate a brand-new supply chain module for clients focused on process optimization and operational efficiency using in-house cutting-edge solutions
+
+
+Operator on Assignment
+Atlanta, Georgia
+August 2021 - April 2023
+
+
+* Operated simulated manufacturing lines in model factory settings to demonstrate the effects of operational, behavioral, and lean/technical system transformations
+* Delivered comprehensive client training sessions in overall equipment effectiveness (OEE), lean & digital use cases, root-cause problem-solving analysis, process confirmation & improvement, and effective team-oriented dynamics
+* Served as an internal champion for continuous operational innovation, encouraging best practices and ongoing learning
+
+
+________________
+
+
+________________
+
+
+KPMG
+Advisory, Customer Solutions Summer Associate
+Chicago, Illinois
+June 2022 - August 2022
+
+
+* Managed an Excel database of 30+ innovative, future-state customer experience (CX) recommendations for a multinational healthcare client, mapping each proposed recommendation to applicable use cases, major pain points, and measurable KPIs
+* Designed detailed future-state journey maps in PowerPoint to visualize CX strategies aligned with key user personas
+* Streamlined onboarding and sales play slide decks by simplifying content and redesigning layouts, increasing self-service learning
+* Gathered and synthesized insights from 20+ client engagement managers to create impactful ‘success story’ case studies for internal training modules and knowledge sharing
+
+
+________________
+
+
+
+
+HONEYWELL
+Customer Experience (CX) Analyst Intern
+Atlanta, Georgia
+June 2021 - August 2021
+
+
+* Tracked 100+ customer journey paths on newly launched B2B e-commerce platform using Google Analytics to identify engagement trends, usage barriers, and drop-off points
+* Produced an interactive visualization in Satmetric to analyze correlations between customer satisfaction and various platform variables
+* Assessed 250+ customer feedback survey responses to diagnose recurring UI/UX friction areas
+* Categorized 7,000+ NPS responses via SQL to identify customer loyalty trends and feedback themes
+* Delivered actionable, data-driven recommendations to enhance the user experience and increase platform adoption rates
+
+
+________________
+
+
+
+
+QUEUES
+Strategy Analyst
+Atlanta, Georgia
+August 2020 - May 2021
+
+
+* Part of an early-stage computer vision startup building real-time wait-time analytics for restaurants and COVID testing sites, with a focus on data strategy and business reporting
+* Built weekly business intelligence reports in Power BI to identify peak traffic patterns and throughput trends, enabling stakeholders to optimize staffing decisions and promotional timing
+
+
+________________
+
+
+
+
+________________
+
+
+DELTA AIR LINES, DELTA CARGO
+Unit Load Devices (ULD) Control Analyst Co-op
+Atlanta, Georgia
+August 2019 - December 2019
+
+
+* Partnered with 50+ global logistics providers to implement DAL Cargo’s disruptive Bluetooth tracking solution, monitoring ULDs in real-time and improving operational visibility
+* Maintained a centralized Excel database to catalog opt-in logistics partners’ information and associated tracking device serial numbers, streamlining inventory accountability
+* Designed a root-cause analysis dashboard in Excel to identify performance bottlenecks in ULD build-ups across major Delta hubs worldwide
+* Forecasted inbound leased pallets in Excel, reducing leasing expenses by $50,000+ 
+* Pioneered the migration to cloud-based file management by transitioning operational data from on-premise local servers to SharePoint, improving accessibility and collaboration

@@ -1,0 +1,228 @@
+.site-header {
+    height: 120px;
+    /* Increased from var(--header-height) */
+    position: sticky;
+    top: 0;
+    background-color: var(--color-bg);
+    z-index: 100;
+    border-bottom: 1px solid var(--color-border);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.header-content {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signature-logo {
+    height: 130px;
+    /* Increased from 100px for better visibility */
+    object-fit: contain;
+    transition: filter 0.3s;
+    padding: 5px 0;
+}
+
+[data-theme='dark'] .signature-logo {
+    /* Invert colors for dark mode since the signature is likely black */
+    filter: invert(1);
+}
+
+.main-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.main-nav a {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    color: var(--color-text);
+    position: relative;
+}
+
+.main-nav a.active {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.main-nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    padding: 0.4rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: var(--color-card-bg);
+    transform: rotate(15deg);
+    opacity: 0.7;
+}
+
+/* Hamburger Menu Button - Hidden on Desktop */
+.hamburger-button {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-text);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 280px;
+    max-width: 80%;
+    background-color: var(--color-bg);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
+    overflow-y: auto;
+    animation: slideInRight 0.3s ease;
+    z-index: 1000;
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-text);
+    cursor: pointer;
+    padding: 0.5rem;
+    line-height: 1;
+    transition: opacity 0.2s;
+}
+
+.close-button:hover {
+    opacity: 0.7;
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.mobile-nav-links a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+    transition: color 0.2s;
+}
+
+.mobile-nav-links a:hover,
+.mobile-nav-links a.active {
+    color: var(--color-primary);
+}
+
+.mobile-theme-toggle {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .header-content {
+        padding: 0 1rem;
+    }
+
+    .signature-logo {
+        height: 60px;
+    }
+
+    /* Hide desktop navigation on mobile */
+    .desktop-nav {
+        display: none;
+    }
+
+    /* Show hamburger button on mobile */
+    .hamburger-button {
+        display: flex;
+    }
+
+    /* Show mobile menu overlay when open */
+    .mobile-menu-overlay {
+        display: block;
+    }
+}
