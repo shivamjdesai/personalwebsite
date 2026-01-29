@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import '../styles/Header.css'
-import signature from '/src/assets/Signature_Transparent.png'
+import signature from '/src/assets/Signature_v2.png'
 
 function Header({ theme, toggleTheme }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
