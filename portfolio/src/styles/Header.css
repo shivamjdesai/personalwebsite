@@ -177,8 +177,8 @@
 }
 
 .mobile-theme-toggle {
-    margin-top: 1.5rem;
-    /* Match gap of nav links */
+    margin-top: 0;
+    /* Remove extra margin to rely on flex gap */
     width: 100%;
     height: auto;
     font-size: 1.2rem;
@@ -253,7 +253,8 @@
         width: 100%;
         height: auto;
         border-radius: 0;
-        margin-top: 1.5rem;
+        margin-top: 0;
+        /* Removing extra margin */
         justify-content: flex-end;
         /* If it remains flex, but we set it to block above */
         background: transparent;
