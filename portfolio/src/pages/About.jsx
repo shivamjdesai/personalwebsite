@@ -11,9 +11,7 @@ function About() {
                 <div className="about-intro">
                     <h1>About Me</h1>
                     <p>
-                        I'm an aspiring data analyst professional with a journey that spans across multiple industries.
-                        I thrive on uncovering insights from complex data and translating them into meaningful stories.
-                        Outside of the professional world, I'm an avid college basketball and NBA fan, and I enjoy cooking up new recipes in the kitchen.
+                        Hi! I’m Shivam. I’m a data analyst who believes that every dataset has a story to tell—and I’m here to tell it. My journey has taken me through various industries, but my passion for uncovering the 'why' behind the numbers remains constant. Beyond the data, I’m a huge hoops fan (college & NBA) and a home cook who loves a good culinary challenge.
                     </p>
                 </div>
             </section>
