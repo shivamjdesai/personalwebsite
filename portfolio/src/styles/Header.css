@@ -120,7 +120,8 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 280px;
+    width: 240px;
+    /* Reduced from 280px */
     max-width: 80%;
     background-color: var(--color-bg);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
@@ -153,6 +154,8 @@
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 3rem;
+    align-items: flex-end;
+    /* Right align items */
 }
 
 .mobile-nav-links a {
@@ -163,6 +166,9 @@
     padding: 0.5rem 0;
     border-bottom: 1px solid var(--color-border);
     transition: color 0.2s;
+    text-align: right;
+    width: 100%;
+    /* Keep border full width or remove? keeping full width but text right aligned */
 }
 
 .mobile-nav-links a:hover,
@@ -173,22 +179,19 @@
 .mobile-theme-toggle {
     margin-top: 2rem;
     width: 44px;
-    /* Fixed width for circle */
     height: 44px;
-    /* Fixed height for circle */
     font-size: 1.2rem;
     padding: 0;
     background: transparent;
     border: 1px solid var(--color-border);
     border-radius: 50%;
-    /* Make it circular */
     display: flex;
     align-items: center;
     justify-content: center;
-    align-self: center;
-    /* Center in the flex column if needed */
+    align-self: flex-end;
+    /* Right align */
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
 }
 
 /* Animations */
@@ -244,5 +247,7 @@
         margin-top: 2rem;
         justify-content: center;
         background: transparent;
+        margin-right: 0;
+        margin-left: auto;
     }
 }
