@@ -71,7 +71,7 @@ function Header({ theme, toggleTheme }) {
                                 </NavLink>
 
                                 <button onClick={() => { toggleTheme(); closeMobileMenu(); }} className="theme-toggle mobile-theme-toggle">
-                                    {theme === 'light' ? '🌙' : '☀️'}
+                                    {theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode'}
                                 </button>
                             </div>
                         </nav>

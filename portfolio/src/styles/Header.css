@@ -177,21 +177,30 @@
 }
 
 .mobile-theme-toggle {
-    margin-top: 2rem;
-    width: 44px;
-    height: 44px;
+    margin-top: 1.5rem;
+    /* Match gap of nav links */
+    width: 100%;
+    height: auto;
     font-size: 1.2rem;
-    padding: 0;
+    /* Match nav link font size */
+    font-weight: 500;
+    padding: 0.5rem 0;
     background: transparent;
-    border: 1px solid var(--color-border);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-end;
-    /* Right align */
-    margin-left: auto;
+    border: none;
+    border-bottom: 1px solid var(--color-border);
+    border-radius: 0;
+    display: block;
+    text-align: right;
+    color: var(--color-text);
+    cursor: pointer;
+    align-self: auto;
+    /* Reset alignment overrides */
+    margin-left: 0;
     margin-right: 0;
+}
+
+.mobile-theme-toggle:hover {
+    color: var(--color-primary);
 }
 
 /* Animations */
@@ -241,13 +250,15 @@
     }
 
     .mobile-theme-toggle {
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        margin-top: 2rem;
-        justify-content: center;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        margin-top: 1.5rem;
+        justify-content: flex-end;
+        /* If it remains flex, but we set it to block above */
         background: transparent;
         margin-right: 0;
-        margin-left: auto;
+        margin-left: 0;
+        text-align: right;
     }
 }
