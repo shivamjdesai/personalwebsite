@@ -171,13 +171,24 @@
 }
 
 .mobile-theme-toggle {
-    margin-top: 1rem;
-    width: 100%;
-    text-align: left;
-    font-size: 1.1rem;
-    padding: 0.8rem 1rem;
+    margin-top: 2rem;
+    width: 44px;
+    /* Fixed width for circle */
+    height: 44px;
+    /* Fixed height for circle */
+    font-size: 1.2rem;
+    padding: 0;
     background: transparent;
     border: 1px solid var(--color-border);
+    border-radius: 50%;
+    /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    /* Center in the flex column if needed */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Animations */
@@ -227,9 +238,9 @@
     }
 
     .mobile-theme-toggle {
-        width: 100%;
-        text-align: center;
-        border-radius: 50px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
         margin-top: 2rem;
         justify-content: center;
         background: transparent;
