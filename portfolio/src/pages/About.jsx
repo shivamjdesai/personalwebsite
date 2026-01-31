@@ -13,8 +13,11 @@ function About() {
                     <p style={{ marginBottom: '1rem' }}>
                         Hi! I’m Shivam.
                     </p>
+                    <p style={{ marginBottom: '1rem' }}>
+                        I’m a data analyst who believes that every dataset has a story to tell—and I’m here to tell it. My journey has taken me through various industries, but my passion for uncovering the 'why' behind the numbers remains constant.
+                    </p>
                     <p>
-                        I’m a data analyst who believes that every dataset has a story to tell—and I’m here to tell it. My journey has taken me through various industries, but my passion for uncovering the 'why' behind the numbers remains constant. Off the clock? I’m a huge hoops fan (college & NBA) and a home cook who loves a good culinary challenge.
+                        Off the clock? I’m a huge hoops fan (college & NBA) and a home cook who loves a good&nbsp;culinary&nbsp;challenge.
                     </p>
                 </div>
             </section>
